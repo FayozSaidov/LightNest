@@ -2,15 +2,15 @@ import "./App.css";
 import Header from "./components/Header";
 import LeftSide from "./components/LeftSide";
 import MainPage from "./components/MainPage";
-import Search from "./components/Search";
+import ModalForm from "./components/ModalForm";
 
 function App() {
   return (
     <>
       <Header />
       <LeftSide/>
-      <Search/>
       <MainPage />
+      <ModalForm/>
     </>
   );
 }
