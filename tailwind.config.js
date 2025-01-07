@@ -8,8 +8,9 @@ export default {
     extend: {
       fontFamily:{
         ANVYL: ['ANVYL']
-      }
+      },
     },
   },
   plugins: [],
 }
+
