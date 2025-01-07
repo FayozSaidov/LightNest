@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../img/IMG_2165.png'
+import logo from '@img/IMG_2165.png'
 
 export default function Header() {
   return (
