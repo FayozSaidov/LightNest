@@ -5,7 +5,7 @@ import colors from "./Colors.jsx";
 import types from "./Types.jsx";
 import Logo from "@img/Logo.png";
 import Close from "@img/close.png";
-import { addList } from "./addingListFunc";
+
 
 export default function ModalForm({ closeModal }) {
   const [selectedType, setSelectedType] = useState({
@@ -65,10 +65,10 @@ export default function ModalForm({ closeModal }) {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-40 flex justify-center items-center pt-[100px] overflow-y-auto" onClick={closeModal}>
-      {/* Остановка всплытия событий клика */}
+
       <div
         className="w-[600px] min-h-[700px] bg-white border border-gray-200 rounded-lg p-7 mt-[400px] mb-[100px] relative"
-        onClick={(e) => e.stopPropagation()} // Остановка всплытия
+        onClick={(e) => e.stopPropagation()} 
       >
         <div className="w-full flex justify-between items-center">
           <img src={Logo} className="w-[100px]" alt="Logo" />

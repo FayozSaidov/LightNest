@@ -68,6 +68,7 @@ const colors = [
               />
               <p className="font-bold text-xl">Антроцит</p>
             </div>
+
           ),
         },
         {
@@ -79,7 +80,7 @@ const colors = [
                 className="w-[40px] h-[40px] rounded-full mr-[10px]"
                 alt=""
               />
-              <p className="font-bold text-xl">Шейфельский дуб</p>
+              <p className="font-bold text-xl">Шейф. дуб</p>
             </div>
           ),
         },

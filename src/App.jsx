@@ -6,7 +6,6 @@ import ModalForm from "./components/form/ModalForm";
 import React, { useState, useEffect } from "react";
 
 function App() {
-
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
@@ -21,16 +20,17 @@ function App() {
     };
   }, [isModalOpen]);
 
-
   return (
-    <>
+    <div>
       <Header openModal={() => setIsModalOpen(true)} />
       {isModalOpen && <ModalForm closeModal={() => setIsModalOpen(false)} />}
-      <LeftSide/>
-      <MainPage />
-    </>
+
+      <div className="h-screen overflow-hidden">
+        <LeftSide />
+        <MainPage />
+      </div>
+    </div>
   );
 }
 
 export default App;
-
