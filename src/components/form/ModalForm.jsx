@@ -52,6 +52,15 @@ export default function ModalForm({ closeModal }) {
     }));
   };
 
+  const handleSubmit = () => {
+    console.log("Collected Data:", selectedType);
+    // Здесь можно добавить отправку в Firebase
+    closeModal()
+    
+  };
+
+  
+
   const renderSelect = (label, optionsData, field, handleChangeFn) => (
     <>
       <p className="font-bold text-xl mb-[10px] mt-[30px]">{label}:</p>
@@ -112,7 +121,7 @@ export default function ModalForm({ closeModal }) {
           placeholder="Введите размер"
         />
 
-        <button className="w-[200px] h-[50px] bg-[#af8d53] block text-white font-bold rounded-lg mt-[20px] mx-auto">
+        <button  onClick={handleSubmit} className="w-[200px] h-[50px] bg-[#af8d53] block text-white font-bold rounded-lg mt-[20px] mx-auto">
           Добавить
         </button>
       </div>
